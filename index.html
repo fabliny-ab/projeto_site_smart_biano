@@ -41,7 +41,7 @@
         }
 
         .carousel-item img {
-            height: 700px;
+            height: 100%;
         }
 
         #produtos {
@@ -67,6 +67,10 @@
             background-color: #ccc;
         }
 
+        #produtos img {
+            height: 300px;
+        }
+
     </style>
 </head>
 <body>
@@ -85,7 +89,7 @@
                     <nav id="menu" class="collapse navbar-collapse justify-content-between">
                         <ul class="nav navbar-nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#home">Home</a>
+                                <a class="nav-link active" href="#carrossel">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#produtos" data-bs-toggle="dropdown">
@@ -158,16 +162,17 @@
         </div>
     </section>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#topo">
         <section id="produtos">
             <div class="row g-0">
                 <div class="col-12">
                     <h2>Produtos</h2>
                     <div class="container navegacao-tab">
-                    <div class="nav nav-tabs justify-content-center">
-                        <button data-bs-toggle="tab" data-bs-target="#notebook" type="button" class="nav-link active">Notebook</button>
-                        <button data-bs-toggle="tab" data-bs-target="#smartphone" type="button" class="nav-link">Smartphone</button>
-                        <button data-bs-toggle="tab" data-bs-target="#smartwatch" type="button" class="nav-link">Smartwatch</button>
+                        <div class="nav nav-tabs justify-content-center">
+                            <button data-bs-toggle="tab" data-bs-target="#notebook" type="button" class="nav-link active">Notebook</button>
+                            <button data-bs-toggle="tab" data-bs-target="#smartphone" type="button" class="nav-link">Smartphone</button>
+                            <button data-bs-toggle="tab" data-bs-target="#smartwatch" type="button" class="nav-link">Smartwatch</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,125 +184,200 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Mais processamento para seu trabalho</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/notebook/keyboard-5017973_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>Book UltraX</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Processador Intel Core i7 de décima geração</li>
+                                                    <li>Placa gráfica NVIDIA GeForce RTX 3080 dedicada</li>
+                                                    <li>Tela Full HD</li>
+                                                    <li>32 GB de memória RAM</li>
+                                                    <li>SSD NVMe de 1 TB</li>
+                                                    <li>Design elegante e moderno</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>O melhor para jogos</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/notebook/laptop-1283368_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>GamerBook EliteX</h4>
+                                            <p><ul>
+                                                <li>Processador Intel Core i9 de décima geração</li>
+                                                <li>Placa gráfica NVIDIA GeForce RTX 3080 dedicada</li>
+                                                <li>Tela 4K</li>
+                                                <li>32 GB de memória RAM</li>
+                                                <li>SSD NVMe de 2 TB</li>
+                                                <li>Teclado retroiluminado</li>
+                                            </ul></p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Para seu dia a dia</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/notebook/laptop-3781380_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>EasyBook</h4>
+                                            <p><ul>
+                                                <li>Processador Intel Core i3 de décima geração</li>
+                                                <li>Placa gráfica integrada Intel UHD Graphics 620</li>
+                                                <li>Tela com resolução HD</li>
+                                                <li>8 GB de memória RAM</li>
+                                                <li>HD de 1 TB</li>
+                                                <li>Bateria de longa duração</li>
+                                            </ul></p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>O design minimalista é seu charme</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/notebook/produto-notebook.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>FeatherLight Notebook</h4>
+                                            <p><ul>
+                                                <li>Processador Intel Core i5 de nona geração</li>
+                                                <li>Placa gráfica integrada NVIDIA GeForce</li>
+                                                <li>Tela Full HD</li>
+                                                <li>8 GB de memória RAM</li>
+                                                <li>SSD NVMe de 256 GB ou 512 GB</li>
+                                                <li>Acabamento em alumínio</li>
+                                            </ul></p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                             </div>  
                         </div>
-                        <div class="tab-pane" id="smartphone">
+                        <div class="tab-pane position-static" id="smartphone">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
                                             <strong>Última novidade</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/smartphone/apple-1867461_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>SkyPhone Z1</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Processador: quad-core de 2,2,8 GHz</li>
+                                                    <li>Tela: 5,8 polegadas, resolução de 720p</li>
+                                                    <li>Tela Full HD</li>
+                                                    <li>RAM: 6 GB</li>
+                                                    <li>Armazenamento interno: 128 GB</li>
+                                                    <li>Bateria: 4500mAh</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Simples e elegante</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/smartphone/smartphone-1894723_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>Oceanic M1</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Processador: quad-core de 1,8 GHz</li>
+                                                    <li>Tela: 5,8 polegadas, resolução de 720p</li>
+                                                    <li>Tela Full HD</li>
+                                                    <li>RAM: 4 GB</li>
+                                                    <li>Armazenamento interno: 64 GB</li>
+                                                    <li>Bateria: 3500mAh</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Um celular essencial</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/smartphone/iphone-410324_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>NovaTech P2</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Processador: octa-core de 1,6 GHz</li>
+                                                    <li>Tela: 5,8 polegadas, resolução de 720p</li>
+                                                    <li>Tela Full HD</li>
+                                                    <li>RAM: 3 GB</li>
+                                                    <li>Armazenamento interno: 32 GB</li>
+                                                    <li>Bateria: 3000mAh</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                             </div>  
                         </div>
-                        <div class="tab-pane" id="smartwatch">
+                        <div class="tab-pane position-static" id="smartwatch">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Inteligência e ação</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/smartwatch/card-watch.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>Elite</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Sistema operacional: Android Wear OS</li>
+                                                    <li>Conectividade: Bluetooth 5.0, Wi-Fi, GPS</li>
+                                                    <li>Tela: AMOLED de 1,4 polegadas</li>
+                                                    <li>Sensores: acelerômetro, giroscópio, sensor cardíaco, barômetro</li>
+                                                    <li>Resistência à água: 5ATM</li>
+                                                    <li>Bateria: 450mAh com duração de até 3 dias</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                     <article class="card position-static">
                                         <div class="card-header">
-                                            <strong>Última novidade</strong>
+                                            <strong>Agora ficou fácil ser fitness</strong>
                                         </div>
-                                        <img src="./image/laptop-1483974_1920.jpg" alt="">
+                                        <img src="./image/smartwatch/watch-1231130_1920.jpg" alt="">
                                         <div class="card-body">
-                                            <h4>Notebook A</h4>
-                                            <p>Notebook da loja Smath Biano</p>
-                                            <a href="#">Comprar</a>
+                                            <h4>Protech</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>Sistema operacional: iOS</li>
+                                                    <li>Conectividade: Bluetooth 5.0, Wi-Fi, GPS</li>
+                                                    <li>Tela: Retina OLED de 1,5 polegadas</li>
+                                                    <li>Sensores: acelerômetro, giroscópio, sensor cardíaco, barômetro</li>
+                                                    <li>Resistência à água: IP68</li>
+                                                    <li>Bateria: 380mAh com duração de até 2 dias</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                         </div>
                                     </article> 
                                 </div>
@@ -321,26 +401,18 @@
                             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                 <article class="card position-static">
                                     <div class="card-header">
-                                        <strong>Última novidade</strong>
+                                        <strong>Aliando preço com benefício</strong>
                                     </div>
                                     <img src="./image/laptop-1483974_1920.jpg" alt="">
                                     <div class="card-body">
-                                        <h4>Notebook A</h4>
-                                        <p>Notebook da loja Smath Biano</p>
-                                        <a href="#">Comprar</a>
-                                    </div>
-                                </article> 
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                                <article class="card position-static">
-                                    <div class="card-header">
-                                        <strong>Última novidade</strong>
-                                    </div>
-                                    <img src="./image/laptop-1483974_1920.jpg" alt="">
-                                    <div class="card-body">
-                                        <h4>Notebook A</h4>
-                                        <p>Notebook da loja Smath Biano</p>
-                                        <a href="#">Comprar</a>
+                                        <h4>Pague um e leve três</h4>
+                                            <p>
+                                                <ul>
+                                                    <li>1 EasyBook</li>
+                                                    <li>+ 2 acessórios disponíveis</li>
+                                                </ul>
+                                            </p>
+                                            <a class="btn btn-success w-100" href="#">Comprar</a>
                                     </div>
                                 </article> 
                             </div>
